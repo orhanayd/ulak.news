@@ -1,7 +1,7 @@
 <div class="owl-carousel" id="postCarousel">
     <?php
         foreach($all_news as $i => $news){
-            $news['image'] = @(in_array(end(explode('/', $news['image'])), $noImage) ? $news['image'] : 'https://cdn.ulak.news/'.end(explode('/', $news['image'])));
+            $news['image'] = @(in_array(@end(@explode('/', $news['image'])), $noImage) ? $news['image'] : 'https://cdn.ulak.news/'.@end(@explode('/', $news['image'])));
     ?>
         <div class="item">
             <article class="post-box" style="background-image: url(<?php echo $news['image']; ?>?w=500&h=800);">

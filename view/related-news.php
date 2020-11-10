@@ -1,6 +1,6 @@
 <?php 
 foreach($news_data['related'] as $news){
-    $news['image'] = in_array(end(explode('/', $news['image'])), $noImage) ? $news['image'] : 'https://cdn.ulak.news/'.end(explode('/', $news['image']));
+    $news['image'] = in_array(@end(@explode('/', $news['image'])), $noImage) ? $news['image'] : 'https://cdn.ulak.news/'.@end(@explode('/', $news['image']));
 ?>
     <div class="columns column-2">
         <article class="post-box" style="background-image: url(<?php echo $news['image']; ?>?w=320&h=215);">

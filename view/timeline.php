@@ -2,7 +2,7 @@
     if(isset($all_news))
     if(count($all_news)>0)
     foreach(array_slice($all_news, 4, 60) as $news){
-        $news['image'] = @(in_array(end(explode('/', $news['image'])), $noImage) ? $news['image'] : 'https://cdn.ulak.news/'.end(explode('/', $news['image'])));
+        $news['image'] = @(in_array(@end(@explode('/', $news['image'])), $noImage) ? $news['image'] : 'https://cdn.ulak.news/'.@end(@explode('/', $news['image'])));
 ?>
         <div class="timeline-item <?php echo $news['agency']; ?>">
 

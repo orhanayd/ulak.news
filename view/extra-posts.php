@@ -1,7 +1,7 @@
             <div class="extra-post-wrapper">
                 <?php
                     foreach($all_news as $news){
-                        $news['image'] = in_array(@end(@explode('/', $news['image'])), $noImage) ? $news['image'] : 'https://cdn.ulak.news/'.@end(@explode('/', $news['image']));
+                        $news['image'] = @in_array(@end(@explode('/', $news['image'])), $noImage) ? $news['image'] : 'https://cdn.ulak.news/'.@end(@explode('/', $news['image']));
                 ?>
                     <div class="columns column-2">
                         <article class="extra-post-box" style="min-height: 130px; max-height: 130px;">
