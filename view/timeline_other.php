@@ -7,14 +7,16 @@
         <div class="timeline-item <?php echo $news['agency']; ?>">
 
             <div class="timeline-left">
-                <a href="/kaynak_<?php echo $news['agency']; ?>.html" style="background-color: white;" class="timeline-category" data-zebra-tooltip title="<?php echo $news['agency_title']; ?>"><img alt="<?php echo $news['agency_title']; ?>" src="./img/web/mini/<?php echo $news['agency']; ?>.jpg" class="avatar" height="24" width="24"></a>
+                <a href="/kaynak_<?php echo $news['agency']; ?>.html" style="background-color: white;" class="timeline-category" data-zebra-tooltip title="<?php echo $news['agency_title']; ?>">
+                    <img alt="<?php echo $news['agency_title']; ?>" class="ulak-lazy-load-image" src="./img/gifs/spinner_s.gif" data-src="./img/web/mini/<?php echo $news['agency']; ?>.jpg" class="avatar" height="45" width="45">
+                </a>
                 <span class="timeline-date"><?php echo $ulak_class->time_since($news['date_u']); ?></span>
             </div>
 
             <div class="timeline-right">
                 <div class="timeline-post-image">
                     <a title="<?php echo $news['title']; ?>" href="/<?php echo $news['seo_link']; ?>">
-                        <img alt="<?php echo $news['title']; ?>" class="ulak-lazy-load-image" src="//:0" data-src="<?php echo $news['image']; ?>?w=320&h=215">
+                        <img alt="<?php echo $news['title']; ?>" class="ulak-lazy-load-image" src="./img/gifs/eclipse.gif" data-src="<?php echo $news['image']; ?>?w=320&h=215">
                     </a>
                 </div>
                 <div class="timeline-post-content">

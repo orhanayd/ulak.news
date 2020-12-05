@@ -21,7 +21,7 @@
 	<meta name="description" content="Dünya'dan ve Türkiye'den Son dakika haberler ulak news de bu sayfada reklamsız ve hızlı burada." />
 	<meta itemprop="isFamilyFriendly" content="true"/>
 	<meta property="og:description" content="son dakika haberler, son 24 saat haberler, en son haberler, tüm türkiyeden haberler, haberler, magazin haberler, son dakika gelişme, tüm haberler" />
-	<meta property="og:image" content="https://ulak.news/img/ulak/ulak_logo_3.png" />
+	<meta property="og:image" content="https://ulak.news/img/logo/logo_l.png" />
 	<meta property="og:url" content="https://ulak.news" />
 	<meta property="og:locale" content="tr_TR" />
 	<link rel="canonical" href="https://ulak.news/sondakika.html" />

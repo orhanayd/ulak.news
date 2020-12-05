@@ -152,11 +152,11 @@ a{
 	float: left;
 }
 .logo-box{
-	width: 122px;
+	width: 140px;
 	height: 27px;
 	display: block;
 	float: left;
-	margin: 14px;
+	margin: 17px;
 }
 .logo-box h1{
 	margin: 0;
@@ -344,6 +344,7 @@ a{
 [3. Sidebar]
 *------------------------------------------------------------------*/
 .sidebar{
+    font-family: 'Cinzel';
 	position: fixed;
 	width: 300px;
 	top: 0;
@@ -929,7 +930,7 @@ a{
 	color: #FFF;
 	padding: 4px;
 	position: absolute;
-	left: 24px;
+	left: 13px;
 	top: 50%;
 	margin-top: -16px;
 }
@@ -938,19 +939,20 @@ a{
 	display: block;
 	font-size: 10px;
 	position: absolute;
-	top: 50%;
+	top: 59%;
 	margin-top: 16px;
 	text-align: center;
 	width: 100%;
 	padding-top: 3px;
 }
 .timeline-category:after{
+    z-index: -1;
 	content: '';
 	position: absolute;
-	width: 20px;
+	width: 100%;
 	height: 1px;
 	border-top:dotted 1px #CCC;
-	top: 50%;
+	top: 79%;
 	left: 100%;
 }
 .timeline-right{
@@ -2354,16 +2356,16 @@ blockquote span{
 
 }
 .w-boxed-post ul li{
-	display: block;
+	display: inline-flex;
 	width: 100%;
 	border-bottom: solid 1px #EEE;
 }
 .w-boxed-post ul li:last-child{
 	border-bottom:none;
 }
-.w-boxed-post ul li.active a .box-wrapper, .w-boxed-post ul li:hover .box-wrapper{
+/* .w-boxed-post ul li.active a .box-wrapper, .w-boxed-post ul li:hover .box-wrapper{
 	background-color: rgba(0,0,0,.3);
-}
+} */
 .w-boxed-post ul li a{
 	display: block;
 	background-size: cover;
@@ -2379,7 +2381,9 @@ blockquote span{
 }
 .w-boxed-post ul li a .box-wrapper{
 	display: table;
-	background-color: #f6f6f6;
+	/* background-color: #f6f6f6; */
+	background-color: rgba(0,0,0,.3);
+	color: #FFF;
 }
 .w-boxed-post ul li a .box-wrapper .box-left{
 	display: table-cell;
@@ -2402,7 +2406,7 @@ blockquote span{
 .w-boxed-post ul li a .box-wrapper .box-right{
 	display: table-cell;
 	vertical-align: middle;
-	padding: 20px 10px 20px 0;
+	padding: 20px 48px 20px 0;
 }
 .w-boxed-post ul li a .box-wrapper .box-right .p-title{
 	margin: 0;
@@ -2691,6 +2695,7 @@ textarea.frm-input{
 	margin-right: 10px;
 }
 .sidebar-buttons .btn-label{
+    font-family: 'Cinzel';
 	position: relative;
 	line-height: 24px;
 	display: inline-block;

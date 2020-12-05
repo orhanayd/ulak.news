@@ -8,7 +8,7 @@ foreach($news_data['related'] as $news){
                 <h3 class="post-title"><?php echo $news['title']; ?></h3>
                 <div class="post-meta">
                     <div class="post-meta-author-avatar">
-                        <img alt="<?php echo $news['agency_title']; ?>" src="./img/web/mini/<?php echo $news['agency']; ?>.jpg" class="avatar" height="24" width="24">
+                        <img alt="<?php echo $news['agency_title']; ?>" class="ulak-lazy-load-image" src="./img/gifs/spinner_s.gif" data-src="./img/web/mini/<?php echo $news['agency']; ?>.jpg" class="avatar" height="24" width="24">
                     </div>
                     <div class="post-meta-author-info">
                         <span class="post-meta-author-name">

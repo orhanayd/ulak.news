@@ -1,6 +1,7 @@
 <?php
 
 header ("Content-Type:text/xml");
+include('env.php');
 if(isset($_GET['cat'])){
 
 ///// CACHE BITIS /////
@@ -35,7 +36,7 @@ if(isset($_GET['cat'])){
         echo "";
         exit();
     }
-    $data = file_get_contents($_ENV['local3']."/atom_". urlencode($cat).".xml?to=".$page);
+    $data = file_get_contents($_ENV['local3']."/atom_". urlencode($page).".xml?to=".$cat);
     echo $data;
 }
 ?>
