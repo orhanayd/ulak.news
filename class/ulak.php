@@ -73,7 +73,7 @@ class UlakNews{
      * @param int $limit
      * @return array
      */
-    public function get_news(string $agency="all", int $limit=60){
+    public function get_news(string $agency="all", int $limit=35){
 
         if($agency==="all"){
             $curl = $this->curl_func($_ENV['local3']."/news/?limit=$limit");
