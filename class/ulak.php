@@ -80,7 +80,6 @@ class UlakNews{
         }else{
             $curl = $this->curl_func($_ENV['local3']."/news/$agency?limit=$limit");
         }
-
         if($curl && $curl['status']){
             return $curl['result'];
         }

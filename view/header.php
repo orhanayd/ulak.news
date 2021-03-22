@@ -8,7 +8,7 @@
 
     <!--logo start -->
     <div class="logo-box">
-        <a href="./index.php"><img alt="Ulak News | Son dakika haberler" style="width: 145px;" src="./img/logo/logo_l.png" /></a>
+        <a href="./index.php"><img alt="Ulak News | Son dakika haberler" style="width: 116px;" src="./img/logo/logo_text.png" /></a>
     </div>
     <!--logo end -->
 

@@ -2,7 +2,7 @@
 
     <!-- side menu logo start -->
     <div class="sidebar-logo">
-        <a href="./index.php"><img alt="Ulak News | Son dakika haberler" style="height: 35px;" src="./img/logo/kare-logo_l.png" /></a>
+        <a href="./index.php"><img alt="Ulak News | Son dakika haberler" style="height: 36px;" src="./img/logo/logo_text.png" /></a>
         <div class="sidebar-toggle-button">
             <i class="material-icons">&#xE317;</i>
         </div>

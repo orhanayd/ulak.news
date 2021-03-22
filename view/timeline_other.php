@@ -15,13 +15,13 @@
 
             <div class="timeline-right">
                 <div class="timeline-post-image">
-                    <a title="<?php echo $news['title']; ?>" href="/<?php echo $news['seo_link']; ?>">
+                    <a title="<?php echo str_replace(array('"'), array("'"), $news['title']); ?>" href="/<?php echo $news['seo_link']; ?>">
                         <img alt="<?php echo $news['title']; ?>" class="ulak-lazy-load-image" src="./img/gifs/eclipse.gif" data-src="<?php echo $news['image']; ?>?w=320&h=215">
                     </a>
                 </div>
                 <div class="timeline-post-content">
                     <?php if(array_key_exists('categories', $news)){ foreach($news['categories'] as $cat){ echo '<a href="#" class="timeline-category-name">'.$cat.'</a> '; } } ?>
-                    <a title="<?php echo $news['title']; ?>" href="/<?php echo $news['seo_link']; ?>">
+                    <a title="<?php echo str_replace(array('"'), array("'"), $news['title']); ?>" href="/<?php echo $news['seo_link']; ?>">
                         <h3 class="timeline-post-title"><?php echo $news['title']; ?></h3>
                     </a>
                     <div class="timeline-post-info">
