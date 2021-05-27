@@ -1,15 +1,19 @@
 <div class="header-menu">
         <ul class="header-navigation" data-show-menu-on-mobile>
             <?php
-                foreach($agencies as $agency){
+                foreach($agencies as $key=>$agency){
             ?>
                 <li>
                     <a title="<?php echo $agency['title']; ?>" href="/<?php echo $agency['seo_link']; ?>" class="material-button submenu-toggle"><?php echo $agency['title']; ?></a>
                 
                 </li>
             <?php
+                if($key===7){
+                    break;
                 }
-                unset($agency)
+                }
+                unset($agency);
+                unset($key);
             ?>
             <li>
                 <a href="#" class="material-button submenu-toggle">Kategoriler <i class="material-icons">&#xE313;</i></a>
