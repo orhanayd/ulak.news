@@ -8,6 +8,7 @@
     $noImage = [
       'node-image.webp',
       'diken_manset.png',
-      'dokuz8-manset.webp'
+      'dokuz8-manset.webp',
+      'halkweb_manset.png'
 	  ];
 ?>
