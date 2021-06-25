@@ -3,7 +3,7 @@
 header ("Content-Type:text/xml");
 include('env.php');
 if(isset($_GET['page'])){
-
+    exit();
     ///// CACHE //////////
     require_once "sCache.php";
     $options = array(
@@ -14,10 +14,13 @@ if(isset($_GET['page'])){
         );
     
     $sCache = new sCache($options); // ayarları sınıfımıza gönderip sınıfı çalıştıralım.
-///// CACHE BITIS /////
+    ///// CACHE BITIS /////
 
     $page = preg_replace('/\D/', '', $_GET['page']);
     $data = file_get_contents($_ENV['local3']."/sitemap_$page.xml");
+    $sitemapFile = fopen("./sitemaps/sitemap_$page.xml", "w") or die("Unable to open file!");
+    fwrite($sitemapFile, $data);
+    fclose($sitemapFile);
     echo $data;
 }
 ?>

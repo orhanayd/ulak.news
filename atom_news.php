@@ -36,7 +36,7 @@ if(isset($_GET['cat'])){
         echo "";
         exit();
     }
-    $data = file_get_contents($_ENV['local3']."/atom_". urlencode($page).".xml?to=".$cat);
+    $data = file_get_contents($_ENV['local3']."/atom_". urlencode($page).".xml?to=".urlencode($cat));
     echo $data;
 }
 ?>

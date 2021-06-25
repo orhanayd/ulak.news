@@ -117,5 +117,18 @@
             return $s;
         }
 
+        public function isActiveAgency($agencies, $agency=[]){
+            $result = false;
+            if(count($agencies) > 0){
+                for ($i=0; $i < count($agencies); $i++) { 
+                    if($agencies[$i]['id'] === $agency){
+                        $result = true;
+                        break;
+                    }
+                }
+            }
+            return $result;
+        }
+
     }
 ?>

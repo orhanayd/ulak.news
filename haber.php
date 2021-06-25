@@ -15,13 +15,12 @@
 
 	$news_status = false;
 
-	if($news_data){
+	if($news_data && $ulak_class->isActiveAgency($agencies, $news_data['agency'])){
 		$news_status = true;
 	}
 	
 	$news_data['image'] = in_array(@end(@explode('/', $news_data['image'])), $noImage) ? $news_data['image'] : 'https://cdn.ulak.news/'.@end(@explode('/', $news_data['image']));
 	
-
 ?>
 <!DOCTYPE html>
 <html lang="tr">
