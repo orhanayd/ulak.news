@@ -20,7 +20,10 @@
 	}
 	
 	$news_data['image'] = in_array(@end(@explode('/', $news_data['image'])), $noImage) ? $news_data['image'] : 'https://cdn.ulak.news/'.@end(@explode('/', $news_data['image']));
-	
+	if($get_agency === 'ulaknews' && $get_id === "1"){
+		header("Location: https://ra.ulak.news/register.php");
+		exit();
+	}
 ?>
 <!DOCTYPE html>
 <html lang="tr">
@@ -69,7 +72,7 @@
 	<meta itemprop="dateModified" content="<?php echo date("Y-m-d", $news_data['saved_date']); ?>">
 	<link rel="image_src" href="<?php echo $news_data['image']; ?>" />
 	<link rel="canonical" href="https://ulak.news/<?php echo $news_data['seo_link']; ?>" />
-	<script type="application/ld+json"> { "@context": "https://schema.org", "@type": "NewsArticle", "mainEntityOfPage": { "@type": "WebPage", "@id": "https://ulak.news/<?php echo $news_data['seo_link']; ?>" }, "headline": "<?php echo htmlentities(strip_tags($news_data['title']), ENT_QUOTES); ?>", "name": "<?php echo htmlentities(strip_tags($news_data['title']), ENT_QUOTES); ?>", "articleBody": "<?php echo htmlentities(strip_tags(str_replace("\\", "", $news_data['text'])), ENT_QUOTES); ?>", "articleSection": "<?php echo strip_tags($news_data['categories'][0]); ?>", "image": { "@type": "ImageObject", "url": "<?php echo $news_data['image']; ?>", "height": 325, "width": 650 }, "datePublished": "<?php echo gmdate("Y-m-d\TH:i:s\+03:00", $news_data['date_u']); ?>", "dateModified": "<?php echo gmdate("Y-m-d\TH:i:s\+03:00", $news_data['date_u']); ?>", "genre": "news", "wordCount": <?php echo str_word_count($news_data['text']); ?>, "inLanguage": "tr-TR", "keywords": "<?php echo strip_tags(str_replace(' ', ', ', htmlentities($news_data['spot'], ENT_QUOTES))); ?>", "author": { "@type": "Person", "name": "<?php echo $news_data['agency_title']; ?>" }, "publisher": { "@type": "Organization", "name": "Ulak News", "logo": { "@type": "ImageObject", "url": "https://ulak.news/img/ulak/logo_2.webp", "width": 111, "height": 60 } }, "description": "<?php echo htmlentities(strip_tags($news_data['title']), ENT_QUOTES); ?>" } </script>
+	<script type="application/ld+json"> { "@context": "https://schema.org", "@type": "NewsArticle", "mainEntityOfPage": { "@type": "WebPage", "@id": "https://ulak.news/<?php echo $news_data['seo_link']; ?>" }, "headline": "<?php echo htmlentities(strip_tags($news_data['title']), ENT_QUOTES); ?>", "name": "<?php echo htmlentities(strip_tags($news_data['title']), ENT_QUOTES); ?>", "articleBody": "<?php echo htmlentities(strip_tags(str_replace("\\", "", $news_data['text'])), ENT_QUOTES); ?>", "articleSection": "<?php echo strip_tags($news_data['categories'][0]); ?>", "image": { "@type": "ImageObject", "url": "<?php echo $news_data['image']; ?>", "height": 325, "width": 650 }, "datePublished": "<?php echo gmdate("Y-m-d\TH:i:s\+03:00", $news_data['date_u']); ?>", "dateModified": "<?php echo gmdate("Y-m-d\TH:i:s\+03:00", $news_data['date_u']); ?>", "genre": "news", "wordCount": <?php echo str_word_count($news_data['text']); ?>, "inLanguage": "tr-TR", "keywords": "<?php echo strip_tags(str_replace(' ', ', ', htmlentities($news_data['spot'], ENT_QUOTES))); ?>", "author": { "@type": "Person", "name": "<?php echo $news_data['agency_title']; ?>" }, "publisher": { "@type": "Organization", "name": "Ulak News", "logo": { "@type": "ImageObject", "url": "https://ulak.news/img/logo/logo_text.png", "width": 111, "height": 60 } }, "description": "<?php echo htmlentities(strip_tags($news_data['title']), ENT_QUOTES); ?>" } </script>
 
 	<?php
 		}else{

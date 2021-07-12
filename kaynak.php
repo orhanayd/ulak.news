@@ -52,8 +52,8 @@
 	<meta name="description" content="<?php foreach($agencies as $agency){ echo $agency['title']." haberleri, "; } ?>Tüm ajanslar, türkiyeden haber ajanslarının son dakika haberleri | Ulak.news" />
 	<link rel="canonical" href="https://ulak.news/kaynak.html" />
 	<meta property="og:url" content="https://ulak.news/kaynak.html" />
-	<meta property="og:image" content="https://ulak.news/img/logo/logo_l.png" />
-	<meta name="twitter:image" content="https://ulak.news/img/logo/logo_l.png" />
+	<meta property="og:image" content="https://ulak.news/img/logo/logo_text.png" />
+	<meta name="twitter:image" content="https://ulak.news/img/logo/logo_text.png" />
 	<?php
 		}
 	?>

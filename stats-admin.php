@@ -31,7 +31,7 @@
 	<meta name="description" content="Haberlerle ilgili verilerin analizlerini bu sayfadan takip edebilirsiniz." />
 	<meta property="og:title" content="İstatistikler | Ulak News" />
 	<meta property="og:description" content="Haberlerle ilgili verilerin analizlerini bu sayfadan takip edebilirsiniz." />
-	<meta property="og:image" content="https://ulak.news/img/logo/logo_l.png" />
+	<meta property="og:image" content="https://ulak.news/img/logo/logo_text.png" />
 	<meta property="og:url" content="https://ulak.news" />
 	<meta property="og:locale" content="tr_TR" />
 	<meta itemprop="isFamilyFriendly" content="true" />

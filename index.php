@@ -22,7 +22,7 @@
 	<meta name="description" content="Ulak news, Haberler, son dakika haberleri, yerel ve dünyadan en güncel gelişmeler, magazin, ekonomi, spor, gündem ve tüm haberleri ulak news'de!" />
 	<meta property="og:title" content="Ulak News | Haberler, Son Dakika Haberleri ve Güncel Haber" />
 	<meta property="og:description" content="Ulak news, Haberler, son dakika haberleri, yerel ve dünyadan en güncel gelişmeler, magazin, ekonomi, spor, gündem ve tüm haberleri ulak news'de!" />
-	<meta property="og:image" content="https://ulak.news/img/logo/logo_l.png" />
+	<meta property="og:image" content="https://ulak.news/img/logo/logo_text.png" />
 	<meta property="og:url" content="https://ulak.news" />
 	<meta property="og:locale" content="tr_TR" />
 	<meta itemprop="isFamilyFriendly" content="true"/>
